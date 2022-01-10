@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/header_textSize</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="login_image">
+        <item name="android:layout_width">@dimen/login_image_width</item>
+        <item name="android:layout_height">@dimen/login_image_height</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="text_input_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+    </style>
+
+    <style name="password_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="password_text_input_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="endIconMode">password_toggle</item>
+    </style>
+
+    <style name="email_edit_text">
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="company_edit_text">
+        <item name="android:inputType">text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="money_edit_text">
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="horizontal_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="upload_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/left_button_marginEnd</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="left_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/left_button_marginEnd</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="right_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/right_button_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="switch_">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+    </style>
+
+    <style name="name_edit_text">
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="job_edit_text">
+        <item name="android:inputType">text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+    </style>
+
+    <style name="nr_edit_text">
+        <item name="android:inputType">number</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="dropdown_auto_edit_text" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="toast_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="basic_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="list_add_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="toast_image">
+        <item name="android:layout_width">@dimen/toast_width</item>
+        <item name="android:layout_height">@dimen/toast_height</item>
+        <item name="android:layout_marginTop">@dimen/toast_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/toast_margin_bottom</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="toast_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/toast_text_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/toast_text_margin_bottom</item>
+        <item name="android:textColor">#07750B</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textSize">@dimen/toast_text_size</item>
+    </style>
+
+    <style name="dropdown">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dropdown_padding</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+    </style>
+
+    <style name="recycler_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="list_head_activity_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/list_items_textSize</item>
+    </style>
+
+    <style name="list_act_horizontal_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="list_act_horizontal_layout2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="list_act_horizontal_layout3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+    </style>
+
+    <style name="list_activity_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="list_activity_text2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="list_activity_icons">
+        <item name="android:layout_width">@dimen/image_width</item>
+        <item name="android:layout_height">@dimen/image_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="dropdown_input_layout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="switch_2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="row_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/marginStart</item>
+        <item name="android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginEnd">@dimen/marginEnd</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/toast_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="list_clickable_image">
+        <item name="android:layout_width">@dimen/image_height</item>
+        <item name="android:layout_height">@dimen/image_width</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="menu_dropdown_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dropdown_padding</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="list_activity_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

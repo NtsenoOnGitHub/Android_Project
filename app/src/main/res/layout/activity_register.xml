@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity">
+
+    <LinearLayout
+        style="@style/basic_layout">
+
+        <TextView
+            android:id="@+id/tvTittle"
+            style="@style/header"
+            android:text="@string/register_profile" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lytEmail"
+            android:hint="@string/enter_email_address"
+            style="@style/text_input_layout"
+            app:startIconContentDescription="@string/email"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                style="@style/email_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lytPassword"
+            style="@style/password_text_input_layout"
+            android:hint="@string/password"
+            app:startIconContentDescription="@string/password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                style="@style/password_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/password_text_input_layout"
+            android:id="@+id/lytConfirmPassword"
+            android:hint="@string/confirm_password"
+            app:startIconContentDescription="@string/confirm_password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtConfirmPassword"
+                style="@style/password_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytFirstName"
+            android:hint="@string/first_name"
+            app:startIconContentDescription="@string/first_name"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFirstName"
+                style="@style/name_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytLastName"
+            android:hint="@string/last_name"
+            app:startIconContentDescription="@string/last_name"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLastName"
+                style="@style/name_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytId"
+            android:hint="@string/identity_number"
+            app:startIconContentDescription="@string/identity_number"
+            app:endIconMode="clear_text"
+            app:counterEnabled="true"
+            app:counterMaxLength="13"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtId"
+                style="@style/nr_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/edit_text"
+            android:id="@+id/lytGender"
+            app:startIconDrawable="@drawable/person"
+            app:endIconMode="dropdown_menu"
+            android:text="@string/gender"
+            app:boxBackgroundMode="outline">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdownGender"
+                style="@style/dropdown_auto_edit_text"
+                android:hint="@string/select_gender"
+                android:cursorVisible="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytCellNr"
+            android:hint="@string/cellphone_number"
+            app:startIconContentDescription="string/cellphone_number"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCellNr"
+                style="@style/nr_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytAlternativeCellNr"
+            android:hint="@string/alternative_cellphone_number"
+            app:startIconContentDescription="string/cellphone_number"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAlternativeCellNr"
+                style="@style/nr_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytNokCellNr"
+            android:hint="@string/next_of_kin_cellphone_number"
+            app:startIconContentDescription="string/cellphone_number"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNokCellNr"
+                style="@style/nr_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytCounty"
+            android:hint="@string/county_name"
+            app:startIconContentDescription="@string/county_name"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCountry"
+                style="@style/name_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytProvince"
+            android:hint="@string/province_name"
+            app:startIconContentDescription="@string/province_name"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtProvince"
+                style="@style/name_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytCity"
+            android:hint="@string/city_name"
+            app:startIconContentDescription="@string/city_name"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCity"
+                style="@style/name_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytStreetName"
+            android:hint="@string/street_name"
+            app:startIconContentDescription="@string/street_name"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtStreetName"
+                style="@style/name_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytHouseNumber"
+            android:hint="@string/house_number"
+            app:startIconContentDescription="@string/house_number"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtHouseNumber"
+                style="@style/nr_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/text_input_layout"
+            android:id="@+id/lytPostalCode"
+            android:hint="@string/postal_code"
+            app:startIconContentDescription="@string/postal_code"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/location">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPostalCode"
+                style="@style/nr_edit_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUploadID"
+            style="@style/upload_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/buttons"
+            android:onClick="UploadId"
+            android:text="Upload ID"
+            app:icon="@drawable/document" />
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            style="@style/upload_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/buttons"
+            android:onClick="UploadPhoto"
+            android:text="Upload Photo"
+            app:icon="@drawable/document" />
+
+        <Button
+            android:id="@+id/btnUploadPOA"
+            style="@style/upload_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/buttons"
+            android:onClick="UploadPOA"
+            android:text="Upload Proof of Address"
+            app:icon="@drawable/document" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/button"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttons"
+            android:onClick="Register"
+            android:text="@string/register"
+            app:icon="@drawable/save" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/lytProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:indeterminateTint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Please wait...."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lytLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lytEmail"
+            style="@style/text_input_layout"
+            android:hint="@string/email_address"
+            app:startIconContentDescription="@string/email"
+            app:startIconDrawable="@drawable/email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                style="@style/email_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lytPassword"
+            style="@style/password_text_input_layout"
+            android:hint="@string/password"
+            app:startIconContentDescription="@string/password"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                style="@style/password_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Switch
+            android:id="@+id/swKeepLogged"
+            style="@style/switch_"
+            android:text="@string/keep_me_logged_in" />
+
+        <LinearLayout style="@style/horizontal_layout">
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/left_button"
+                android:background="@drawable/buttons"
+                android:onClick="RegisterProfile"
+                android:text="@string/register"
+                app:icon="@drawable/person_add" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/right_button"
+                android:background="@drawable/buttons"
+                android:onClick="Login"
+                android:text="@string/login"
+                app:icon="@drawable/exit_to_app" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
